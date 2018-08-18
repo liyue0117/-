@@ -1,0 +1,9 @@
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\bin\Debug\九宫棋.exe.config
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\bin\Debug\九宫棋.exe
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\bin\Debug\九宫棋.pdb
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\obj\Debug\九宫棋.Properties.Resources.resources
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\obj\Debug\九宫棋.csproj.GenerateResource.Cache
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\obj\Debug\九宫棋.exe
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\obj\Debug\九宫棋.pdb
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\obj\Debug\九宫棋.Form.resources
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\obj\Debug\九宫棋.csprojResolveAssemblyReference.cache

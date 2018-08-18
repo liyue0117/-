@@ -1,0 +1,29 @@
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\bin\Debug\井字棋.exe.config
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\obj\Debug\井字棋.csprojResolveAssemblyReference.cache
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\obj\Debug\井字棋.Form.resources
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\obj\Debug\井字棋.Properties.Resources.resources
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\obj\Debug\井字棋.csproj.GenerateResource.Cache
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\bin\Debug\井字棋.exe
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\bin\Debug\井字棋.pdb
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\obj\Debug\井字棋.exe
+D:\DSCloud\Project\Study\Visual Studio_tests\九宫棋\obj\Debug\井字棋.pdb
+C:\Users\MACHENIKE\Desktop\九宫棋\bin\Debug\井字棋.exe.config
+C:\Users\MACHENIKE\Desktop\九宫棋\bin\Debug\井字棋.exe
+C:\Users\MACHENIKE\Desktop\九宫棋\bin\Debug\井字棋.pdb
+C:\Users\MACHENIKE\Desktop\九宫棋\obj\Debug\井字棋.csprojAssemblyReference.cache
+C:\Users\MACHENIKE\Desktop\九宫棋\obj\Debug\井字棋.Form.resources
+C:\Users\MACHENIKE\Desktop\九宫棋\obj\Debug\井字棋.Properties.Resources.resources
+C:\Users\MACHENIKE\Desktop\九宫棋\obj\Debug\井字棋.csproj.GenerateResource.cache
+C:\Users\MACHENIKE\Desktop\九宫棋\obj\Debug\井字棋.csproj.CoreCompileInputs.cache
+C:\Users\MACHENIKE\Desktop\九宫棋\obj\Debug\井字棋.exe
+C:\Users\MACHENIKE\Desktop\九宫棋\obj\Debug\井字棋.pdb
+C:\Users\lrk\Desktop\九宫棋\bin\Debug\井字棋.exe.config
+C:\Users\lrk\Desktop\九宫棋\bin\Debug\井字棋.exe
+C:\Users\lrk\Desktop\九宫棋\bin\Debug\井字棋.pdb
+C:\Users\lrk\Desktop\九宫棋\obj\Debug\井字棋.csprojAssemblyReference.cache
+C:\Users\lrk\Desktop\九宫棋\obj\Debug\井字棋.Form.resources
+C:\Users\lrk\Desktop\九宫棋\obj\Debug\井字棋.Properties.Resources.resources
+C:\Users\lrk\Desktop\九宫棋\obj\Debug\井字棋.csproj.GenerateResource.cache
+C:\Users\lrk\Desktop\九宫棋\obj\Debug\井字棋.csproj.CoreCompileInputs.cache
+C:\Users\lrk\Desktop\九宫棋\obj\Debug\井字棋.exe
+C:\Users\lrk\Desktop\九宫棋\obj\Debug\井字棋.pdb
