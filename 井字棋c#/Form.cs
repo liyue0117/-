@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Collections.Generic;
+using System.Text;
+using System.IO;
+
 
 namespace 井字棋
 {
@@ -79,16 +83,28 @@ namespace 井字棋
             #region 报出结果
             if (Result == 1)//棋子 在数组中表示值为1的一方胜利
             {
-                if(type==3||type==4)MessageBox.Show("玩家获胜");//人机模式
-                else MessageBox.Show("玩家1获胜");//人对战人
-                Restart();
+                if (type == 3 || type == 4)
+                {
+                    MessageBox.Show("玩家获胜"); SaveResult("人机对战，玩家获胜\r\n");//人机模式
+                }//人机模式
+                else
+                {
+                    MessageBox.Show("玩家1获胜"); SaveResult("人人对战，玩家1获胜\r\n");//人对战人
+                }
+                    Restart();
                 return 1;
             }
             if (Result == 2)//棋子 在数组中表示值为2的一方胜利
             {
-                if (type == 3 || type == 4) MessageBox.Show("电脑获胜");//人机模式
-                else MessageBox.Show("玩家2获胜");//人对战人
-                Restart();
+                if (type == 3 || type == 4)
+                {
+                    MessageBox.Show("电脑获胜"); SaveResult("人机对战，电脑获胜\r\n");//人机模式
+                }
+                else
+                {
+                    MessageBox.Show("玩家2获胜"); SaveResult("人人对战，玩家2获胜\r\n");//人对战人
+                }
+                    Restart();
                 return 2;
             }
             #endregion
@@ -102,6 +118,7 @@ namespace 井字棋
             if (full)
             {
                 MessageBox.Show("平局");
+                SaveResult("平局\r\n");
                 Restart();
             }
             #endregion
@@ -523,6 +540,17 @@ namespace 井字棋
                 case 9: Turn(2, 2, 2); break;
                 default:MessageBox.Show("Error!", "信息提示！", MessageBoxButtons.OK, MessageBoxIcon.Error);break;
             }
+        }
+        private void SaveResult(string p)
+        {
+            FileStream fs = new FileStream(@"C:\Users\lrk\Desktop\#\jingziqi\井字棋c#\结果.txt", FileMode.Append);
+            //获得字节数组
+            byte[] data = new UTF8Encoding().GetBytes(p);
+            //开始写入
+            fs.Write(data, 0, data.Length);
+            //清空缓冲区、关闭流
+            fs.Flush();
+            fs.Close();
         }
     }
 }
