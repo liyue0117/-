@@ -10,11 +10,11 @@ namespace 井字棋
     public partial class Form : System.Windows.Forms.Form
     {
         //模式表示（1 人VS人且玩家1先攻,2 人VS人且玩家2先攻,3 人VS电脑且人先攻,4 人VS电脑且电脑先攻）
-        int type = 0;//取1,2,3,4值
+        public int type = 0;//取1,2,3,4值
         //表示两种类型的棋子，ture表示玩家1的棋子，false表示玩家2的棋子
-        bool turn = true;
+       public bool turn = true;
         //初始化按钮数组，0-未按下，1-“X”（玩家），2-"O"（电脑）
-        int[,] ButtonArray = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
+        public int[,] ButtonArray = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
 
         public Form()
         {
@@ -50,7 +50,7 @@ namespace 井字棋
             turn = !turn;//换棋子
         }
 
-        private int JudgeWin(int Player)
+        public int JudgeWin(int Player)
         {
             int Result = 0;
 
@@ -126,7 +126,7 @@ namespace 井字棋
             return 0;
         }
 
-        private void ComputerTurn()
+        public void ComputerTurn()
         {
             #region 调用寻找缺口的函数
             //寻找电脑的缺口
@@ -159,7 +159,7 @@ namespace 井字棋
         /// </summary>
         /// <param name="Player">玩家为1，电脑为2</param>
         /// <returns></returns>
-        private int FindBreach(int Player)
+        public int FindBreach(int Player)
         {
             int Result = 0, Opponent = 0;
 
@@ -343,7 +343,7 @@ namespace 井字棋
         }
 
         //判断是否有 创造两个一排的良好机会
-        private int FindBreach2(int Player)
+        public int FindBreach2(int Player)
         {
             int Result = 0, Opponent = 0;
 
@@ -438,7 +438,7 @@ namespace 井字棋
         /// <param name="Player">玩家为1，电脑为2</param>
         /// <param name="X">X坐标</param>
         /// <param name="Y">Y坐标</param>
-        private void Turn(int Player, int X, int Y)
+       public void Turn(int Player, int X, int Y)
         {
             string Graph;
             if (Player == 1) Graph = "X";
@@ -458,7 +458,7 @@ namespace 井字棋
                 if (Player == 1&&(type==3||type==4)) ComputerTurn();//人机模式自动让机器下棋
         }
         //恢复初始情况
-        private void Restart()
+        public void Restart()
         {
             #region 将按钮数组还原
             for (int x = 0; x <= 2; x++)
@@ -492,33 +492,33 @@ namespace 井字棋
         }
 
         //重新开始
-        private void ToolStripMenuItem_Restart_Click(object sender, EventArgs e)
+        public void ToolStripMenuItem_Restart_Click(object sender, EventArgs e)
         {
             Restart();
         }
 
         //以下为 模式选择时的初始化
-        private void 玩家1ToolStripMenuItem_Click(object sender, EventArgs e)
+        public void 玩家1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             type = 1;//1 人VS人且玩家1先攻
             模式ToolStripMenuItem.Enabled = false;
             turn = true;
         }
 
-        private void 玩家2ToolStripMenuItem_Click(object sender, EventArgs e)
+        public void 玩家2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             type = 2;//2 人VS人且玩家2先攻
             模式ToolStripMenuItem.Enabled = false;
             turn = false;
         }
 
-        private void 人ToolStripMenuItem_Click(object sender, EventArgs e)
+        public void 人ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             type = 3;//3 人VS电脑且人先攻
             模式ToolStripMenuItem.Enabled = false;
         }
 
-        private void 电脑ToolStripMenuItem_Click(object sender, EventArgs e)
+        public void 电脑ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             type = 4;//4 人VS电脑且电脑先攻
             模式ToolStripMenuItem.Enabled = false;
