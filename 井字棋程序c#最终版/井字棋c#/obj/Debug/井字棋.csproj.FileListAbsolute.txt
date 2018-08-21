@@ -69,3 +69,13 @@ E:\2018工程综合训练\第三次作业\实验\jingziqi\井字棋c#\obj\Debug\
 E:\2018工程综合训练\第三次作业\实验\jingziqi\井字棋c#\obj\Debug\井字棋.Form.resources
 E:\2018工程综合训练\第三次作业\实验\jingziqi\井字棋c#\obj\Debug\井字棋.Properties.Resources.resources
 E:\2018工程综合训练\第三次作业\实验\jingziqi\井字棋c#\obj\Debug\井字棋.csproj.GenerateResource.Cache
+C:\Users\lrk\Desktop\#\jingziqi\井字棋程序c#最终版\井字棋c#\bin\Debug\井字棋.exe.config
+C:\Users\lrk\Desktop\#\jingziqi\井字棋程序c#最终版\井字棋c#\bin\Debug\井字棋.exe
+C:\Users\lrk\Desktop\#\jingziqi\井字棋程序c#最终版\井字棋c#\bin\Debug\井字棋.pdb
+C:\Users\lrk\Desktop\#\jingziqi\井字棋程序c#最终版\井字棋c#\obj\Debug\井字棋.csprojAssemblyReference.cache
+C:\Users\lrk\Desktop\#\jingziqi\井字棋程序c#最终版\井字棋c#\obj\Debug\井字棋.Form.resources
+C:\Users\lrk\Desktop\#\jingziqi\井字棋程序c#最终版\井字棋c#\obj\Debug\井字棋.Properties.Resources.resources
+C:\Users\lrk\Desktop\#\jingziqi\井字棋程序c#最终版\井字棋c#\obj\Debug\井字棋.csproj.GenerateResource.cache
+C:\Users\lrk\Desktop\#\jingziqi\井字棋程序c#最终版\井字棋c#\obj\Debug\井字棋.csproj.CoreCompileInputs.cache
+C:\Users\lrk\Desktop\#\jingziqi\井字棋程序c#最终版\井字棋c#\obj\Debug\井字棋.exe
+C:\Users\lrk\Desktop\#\jingziqi\井字棋程序c#最终版\井字棋c#\obj\Debug\井字棋.pdb

@@ -432,7 +432,7 @@ private void Button_Click(object sender, EventArgs e)
 ![](结果保存.png)
 
 ## **四、项目分工**
-代码编写：李睿康、周兆伟
+代码编写：李睿康、周兆伟、李越、张仕博、陈达
 代码手册生成：张仕博
 XML注释：李越
 readme撰写：周兆伟
