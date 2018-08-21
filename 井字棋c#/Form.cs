@@ -171,135 +171,58 @@ namespace 井字棋
             #endregion
 
             #region 判断并执行缺口
-            //判断第一横排
-            if (ButtonArray[0, 0] + ButtonArray[0, 1] + ButtonArray[0, 2] == 2 * Opponent &&
-                ButtonArray[0, 0] != Player && ButtonArray[0, 1] != Player && ButtonArray[0, 2] != Player)
+            //判断第i(i=1,2,3)横排
+            for (int i = 0; i < 3; i++)
             {
-                //寻找该排是否有空位
-                if (ButtonArray[0, 0] == 0)
+                if (ButtonArray[i, 0] + ButtonArray[i, 1] + ButtonArray[i, 2] == 2 * Opponent &&
+                    ButtonArray[i, 0] != Player && ButtonArray[i, 1] != Player && ButtonArray[i, 2] != Player)
                 {
-                    Turn(2, 0, 0);
-                    Result = 1;
-                }
-                else if (ButtonArray[0, 1] == 0)
-                {
-                    Turn(2, 0, 1);
-                    Result = 1;
-                }
-                else if (ButtonArray[0, 2] == 0)
-                {
-                    Turn(2, 0, 2);
-                    Result = 1;
+                    //寻找该排是否有空位
+                    if (ButtonArray[i, 0] == 0)
+                    {
+                        Turn(2, i, 0);
+                        Result = 1;
+                    }
+                    else if (ButtonArray[i, 1] == 0)
+                    {
+                        Turn(2, i, 1);
+                        Result = 1;
+                    }
+                    else if (ButtonArray[i, 2] == 0)
+                    {
+                        Turn(2, i, 2);
+                        Result = 1;
+                    }
                 }
             }
 
-            //判断第二横排
-            else if (ButtonArray[1, 0] + ButtonArray[1, 1] + ButtonArray[1, 2] == 2 * Opponent &&
-                     ButtonArray[1, 0] != Player && ButtonArray[1, 1] != Player && ButtonArray[1, 2] != Player)
+            //判断第i(i=1,2,3)纵排
+            for (int i = 0; i < 3; i++)
             {
-                if (ButtonArray[1, 0] == 0)
+                
+                if (ButtonArray[0, i] + ButtonArray[1, i] + ButtonArray[2, i] == 2 * Opponent &&
+                        ButtonArray[0, i] != Player && ButtonArray[1, i] != Player && ButtonArray[2, i] != Player)
                 {
-                    Turn(2, 1, 0);
-                    Result = 1;
-                }
-                else if (ButtonArray[1, 1] == 0)
-                {
-                    Turn(2, 1, 1);
-                    Result = 1;
-                }
-                else if (ButtonArray[1, 2] == 0)
-                {
-                    Turn(2, 1, 2);
-                    Result = 1;
-                }
-            }
-
-            //判断第三横排
-            else if (ButtonArray[2, 0] + ButtonArray[2, 1] + ButtonArray[2, 2] == 2 * Opponent &&
-                     ButtonArray[2, 0] != Player && ButtonArray[2, 1] != Player && ButtonArray[2, 2] != Player)
-            {
-                if (ButtonArray[2, 0] == 0)
-                {
-                    Turn(2, 2, 0);
-                    Result = 1;
-                }
-                else if (ButtonArray[2, 1] == 0)
-                {
-                    Turn(2, 2, 1);
-                    Result = 1;
-                }
-                else if (ButtonArray[2, 2] == 0)
-                {
-                    Turn(2, 2, 2);
-                    Result = 1;
-                }
-            }
-
-            //判断第一纵排
-            else if (ButtonArray[0, 0] + ButtonArray[1, 0] + ButtonArray[2, 0] == 2 * Opponent &&
-                     ButtonArray[0, 0] != Player && ButtonArray[1, 0] != Player && ButtonArray[2, 0] != Player)
-            {
-                if (ButtonArray[0, 0] == 0)
-                {
-                    Turn(2, 0, 0);
-                    Result = 1;
-                }
-                else if (ButtonArray[1, 0] == 0)
-                {
-                    Turn(2, 1, 0);
-                    Result = 1;
-                }
-                else if (ButtonArray[2, 0] == 0)
-                {
-                    Turn(2, 2, 0);
-                    Result = 1;
-                }
-            }
-
-            //判断第二纵排
-            else if (ButtonArray[0, 1] + ButtonArray[1, 1] + ButtonArray[2, 1] == 2 * Opponent &&
-                     ButtonArray[0, 1] != Player && ButtonArray[1, 1] != Player && ButtonArray[2, 1] != Player)
-            {
-                if (ButtonArray[0, 1] == 0)
-                {
-                    Turn(2, 0, 1);
-                    Result = 1;
-                }
-                else if (ButtonArray[1, 1] == 0)
-                {
-                    Turn(2, 1, 1);
-                    Result = 1;
-                }
-                else if (ButtonArray[2, 1] == 0)
-                {
-                    Turn(2, 2, 1);
-                    Result = 1;
-                }
-            }
-
-            //判断第三纵排
-            else if (ButtonArray[0, 2] + ButtonArray[1, 2] + ButtonArray[2, 2] == 2 * Opponent &&
-                     ButtonArray[0, 2] != Player && ButtonArray[1, 2] != Player && ButtonArray[2, 2] != Player)
-            {
-                if (ButtonArray[0, 2] == 0)
-                {
-                    Turn(2, 0, 2);
-                    Result = 1;
-                }
-                else if (ButtonArray[1, 2] == 0)
-                {
-                    Turn(2, 1, 2);
-                    Result = 1;
-                }
-                else if (ButtonArray[2, 2] == 0)
-                {
-                    Turn(2, 2, 2);
-                    Result = 1;
+                    if (ButtonArray[0, i] == 0)
+                    {
+                        Turn(2, 0, i);
+                        Result = 1;
+                    }
+                    else if (ButtonArray[1, i] == 0)
+                    {
+                        Turn(2, 1, i);
+                        Result = 1;
+                    }
+                    else if (ButtonArray[2, i] == 0)
+                    {
+                        Turn(2, 2, i);
+                        Result = 1;
+                    }
                 }
             }
 
             //判断左上到右下
-            else if (ButtonArray[0, 0] + ButtonArray[1, 1] + ButtonArray[2, 2] == 2 * Opponent &&
+            if (ButtonArray[0, 0] + ButtonArray[1, 1] + ButtonArray[2, 2] == 2 * Opponent &&
                      ButtonArray[0, 0] != Player && ButtonArray[1, 1] != Player && ButtonArray[2, 2] != Player)
             {
                 if (ButtonArray[0, 0] == 0)
@@ -320,7 +243,7 @@ namespace 井字棋
             }
 
             //判断右上到左下
-            else if (ButtonArray[0, 2] + ButtonArray[1, 1] + ButtonArray[2, 0] == 2 * Opponent &&
+           if (ButtonArray[0, 2] + ButtonArray[1, 1] + ButtonArray[2, 0] == 2 * Opponent &&
                      ButtonArray[0, 2] != Player && ButtonArray[1, 1] != Player && ButtonArray[2, 0] != Player)
             {
                 if (ButtonArray[0, 2] == 0)
@@ -440,29 +363,27 @@ namespace 井字棋
             int Result = 0;
 
             #region 进行判断
-            //判断第一横排
-            if (ButtonArray[0, 0] == Player && ButtonArray[0, 1] == Player && ButtonArray[0, 2] == Player) Result = Player;
+            //判断第i(i=1,2,3)横排
+            for (int i = 0; i < 3; i++)
+            {
+                if (ButtonArray[i, 0] == Player && ButtonArray[i, 1] == Player && ButtonArray[i, 2] == Player)
+                    Result = Player;
+            }
 
-            //判断第二横排
-            else if (ButtonArray[1, 0] == Player && ButtonArray[1, 1] == Player && ButtonArray[1, 2] == Player) Result = Player;
-
-            //判断第三横排
-            else if (ButtonArray[2, 0] == Player && ButtonArray[2, 1] == Player && ButtonArray[2, 2] == Player) Result = Player;
-
-            //判断第一纵排
-            else if (ButtonArray[0, 0] == Player && ButtonArray[1, 0] == Player && ButtonArray[2, 0] == Player) Result = Player;
-
-            //判断第二纵排
-            else if (ButtonArray[0, 1] == Player && ButtonArray[1, 1] == Player && ButtonArray[2, 1] == Player) Result = Player;
-
-            //判断第三纵排
-            else if (ButtonArray[0, 2] == Player && ButtonArray[1, 2] == Player && ButtonArray[2, 2] == Player) Result = Player;
+            //判断第i(i=1,2,3)纵排
+            for (int i = 0; i < 3; i++)
+            {
+                if (ButtonArray[0, i] == Player && ButtonArray[1, i] == Player && ButtonArray[2, i] == Player)
+                    Result = Player;
+            }
 
             //判断左上到右下
-            else if (ButtonArray[0, 0] == Player && ButtonArray[1, 1] == Player && ButtonArray[2, 2] == Player) Result = Player;
+            if (ButtonArray[0, 0] == Player && ButtonArray[1, 1] == Player && ButtonArray[2, 2] == Player)
+                Result = Player;
 
             //判断右上到左下
-            else if (ButtonArray[0, 2] == Player && ButtonArray[1, 1] == Player && ButtonArray[2, 0] == Player) Result = Player;
+            if (ButtonArray[0, 2] == Player && ButtonArray[1, 1] == Player && ButtonArray[2, 0] == Player)
+                Result = Player;
             #endregion
 
             #region 报出结果
