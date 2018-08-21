@@ -181,17 +181,17 @@ namespace 井字棋
                     if (ButtonArray[i, 0] == 0)
                     {
                         Turn(2, i, 0);
-                        Result = 1;
+                        return Result = 1;
                     }
                     else if (ButtonArray[i, 1] == 0)
                     {
                         Turn(2, i, 1);
-                        Result = 1;
+                        return Result = 1;
                     }
                     else if (ButtonArray[i, 2] == 0)
                     {
                         Turn(2, i, 2);
-                        Result = 1;
+                        return Result = 1;
                     }
                 }
             }
@@ -206,17 +206,17 @@ namespace 井字棋
                     if (ButtonArray[0, i] == 0)
                     {
                         Turn(2, 0, i);
-                        Result = 1;
+                        return Result = 1;
                     }
                     else if (ButtonArray[1, i] == 0)
                     {
                         Turn(2, 1, i);
-                        Result = 1;
+                        return Result = 1;
                     }
                     else if (ButtonArray[2, i] == 0)
                     {
                         Turn(2, 2, i);
-                        Result = 1;
+                        return Result = 1;
                     }
                 }
             }
@@ -228,17 +228,17 @@ namespace 井字棋
                 if (ButtonArray[0, 0] == 0)
                 {
                     Turn(2, 0, 0);
-                    Result = 1;
+                    return Result = 1;
                 }
                 else if (ButtonArray[1, 1] == 0)
                 {
                     Turn(2, 1, 1);
-                    Result = 1;
+                    return Result = 1;
                 }
                 else if (ButtonArray[2, 2] == 0)
                 {
                     Turn(2, 2, 2);
-                    Result = 1;
+                    return Result = 1;
                 }
             }
 
@@ -249,17 +249,17 @@ namespace 井字棋
                 if (ButtonArray[0, 2] == 0)
                 {
                     Turn(2, 0, 2);
-                    Result = 1;
+                    return Result = 1;
                 }
                 else if (ButtonArray[1, 1] == 0)
                 {
                     Turn(2, 1, 1);
-                    Result = 1;
+                    return Result = 1;
                 }
                 else if (ButtonArray[2, 0] == 0)
                 {
                     Turn(2, 2, 0);
-                    Result = 1;
+                    return Result = 1;
                 }
             }
             #endregion
@@ -276,84 +276,59 @@ namespace 井字棋
             if (Player == 1) Opponent = 2;
             else Opponent = 1;
             #endregion
-            //判断第一横排
-            if (ButtonArray[0, 0] + ButtonArray[0, 1] + ButtonArray[0, 2] == Opponent&&
-                ButtonArray[0, 0] != Player && ButtonArray[0, 1] != Player && ButtonArray[0, 2] != Player)
-                if(ButtonArray[0, 0] == Opponent)
-                {
-                    Turn(2, 0, 2);
-                    return Result = 1;
-                }
-                else if(ButtonArray[0, 2] == Opponent)
-                {
-                    Turn(2, 0, 0);
-                    return Result = 1;
-                }
-            //判断第三横排
-            if (ButtonArray[2, 0] + ButtonArray[2, 1] + ButtonArray[2, 2] == Opponent &&
-                ButtonArray[2, 0] != Player && ButtonArray[2, 1] != Player && ButtonArray[2, 2] != Player)
-                if (ButtonArray[2, 0] == Opponent)
-                {
-                    Turn(2, 2, 2);
-                    return Result = 1;
-                }
-                else if (ButtonArray[2, 2] == Opponent)
-                {
-                    Turn(2, 2, 0);
-                    return Result = 1;
-                }
-            //判断第一纵排
-            if (ButtonArray[0, 0] + ButtonArray[1, 0] + ButtonArray[2, 0] == Opponent &&
-                ButtonArray[0, 0] != Player && ButtonArray[1, 0] != Player && ButtonArray[2, 0] != Player)
-                if (ButtonArray[0, 0] == Opponent)
-                {
-                    Turn(2, 2, 0);
-                    return Result = 1;
-                }
-                else if (ButtonArray[2, 0] == Opponent)
-                {
-                    Turn(2, 0, 0);
-                    return Result = 1;
-                }
-            //判断第三纵排
-            if (ButtonArray[0, 2] + ButtonArray[1, 2] + ButtonArray[2, 2] ==  Opponent &&
-                ButtonArray[0, 2] != Player && ButtonArray[1, 2] != Player && ButtonArray[2, 2] != Player)
-                if (ButtonArray[0, 2] == Opponent)
-                {
-                    Turn(2, 2, 2);
-                    return Result = 1;
-                }
-                else if (ButtonArray[2, 2] == Opponent)
-                {
-                    Turn(2, 0, 2);
-                    return Result = 1;
-                }
-            //判断左上到右下
-            if (ButtonArray[0, 0] + ButtonArray[1, 1] + ButtonArray[2, 2] ==  Opponent &&
+            //判断第横排
+            for (int j = 0; j < 2; j++ )
+            {
+                int i = 2 * j;
+                if (ButtonArray[i, 0] + ButtonArray[i, 1] + ButtonArray[i, 2] == Opponent &&
+                    ButtonArray[i, 0] != Player && ButtonArray[i, 1] != Player && ButtonArray[i, 2] != Player)
+                    if (ButtonArray[i, 0] == Opponent)
+                    {
+                        Turn(2, i, 2);
+                        return Result = 1;
+                    }
+                    else if (ButtonArray[i, 2] == Opponent)
+                    {
+                        Turn(2, i, 0);
+                        return Result = 1;
+                    }
+            }
+            //判断纵排
+            for (int j = 0; j < 2; j++)
+            {
+                int i = 2 * j;
+                if (ButtonArray[0, i] + ButtonArray[1, i] + ButtonArray[2, i] == Opponent &&
+                ButtonArray[0, i] != Player && ButtonArray[1, i] != Player && ButtonArray[2, i] != Player)
+                    if (ButtonArray[0, i] == Opponent)
+                    {
+                        Turn(2, 2, i);
+                        return Result = 1;
+                    }
+                    else if (ButtonArray[2, i] == Opponent)
+                    {
+                        Turn(2, 0, i);
+                        return Result = 1;
+                    }
+            }
+
+            //判断对角
+            for (int j = 0; j < 2; j++)
+            {
+                int i = 2 * j;
+                if (ButtonArray[0, i] + ButtonArray[1, 1] + ButtonArray[2, 2 - i] == Opponent &&
                 ButtonArray[0, 0] != Player && ButtonArray[1, 1] != Player && ButtonArray[2, 2] != Player)
-                if (ButtonArray[0, 0] == Opponent)
-                {
-                    Turn(2, 2, 2);
-                    return Result = 1;
-                }
-                else if (ButtonArray[2, 2] == Opponent)
-                {
-                    Turn(2, 0, 0);
-                    return Result = 1;
-                }
-            //判断右上到左下
-            if (ButtonArray[0, 2] + ButtonArray[1, 1] + ButtonArray[2, 0] ==  Opponent &&
-                ButtonArray[0, 2] != Player && ButtonArray[1, 1] != Player && ButtonArray[2, 0] != Player)
-                if (ButtonArray[0, 2] == Opponent)
-                {
-                    Turn(2, 2, 0);
-                    return Result = 1;
-                }
-                else if (ButtonArray[2, 0] == Opponent)
-                {
-                    Turn(2, 0, 2);
-                    return Result = 1;
-                }
+                    if (ButtonArray[0, i] == Opponent)
+                    {
+                        Turn(2, 2, 2-i);
+                        return Result = 1;
+                    }
+                    else if (ButtonArray[2, 2-i] == Opponent)
+                    {
+                        Turn(2, 0, i);
+                        return Result = 1;
+                    }
+            }
+            
             return Result;
         }
 

@@ -60,3 +60,12 @@ C:\Users\lrk\Desktop\#\jingziqi\井字棋c#\obj\Debug\井字棋.pdb
 E:\2018工程综合训练\第三次作业\clone\jingziqi\井字棋c#\bin\Debug\井字棋.exe.config
 E:\2018工程综合训练\第三次作业\clone\jingziqi\井字棋c#\obj\Debug\井字棋.exe
 E:\2018工程综合训练\第三次作业\clone\jingziqi\井字棋c#\obj\Debug\井字棋.pdb
+E:\2018工程综合训练\第三次作业\实验\jingziqi\井字棋c#\bin\Debug\井字棋.exe.config
+E:\2018工程综合训练\第三次作业\实验\jingziqi\井字棋c#\obj\Debug\井字棋.exe
+E:\2018工程综合训练\第三次作业\实验\jingziqi\井字棋c#\obj\Debug\井字棋.pdb
+E:\2018工程综合训练\第三次作业\实验\jingziqi\井字棋c#\bin\Debug\井字棋.exe
+E:\2018工程综合训练\第三次作业\实验\jingziqi\井字棋c#\bin\Debug\井字棋.pdb
+E:\2018工程综合训练\第三次作业\实验\jingziqi\井字棋c#\obj\Debug\井字棋.csprojResolveAssemblyReference.cache
+E:\2018工程综合训练\第三次作业\实验\jingziqi\井字棋c#\obj\Debug\井字棋.Form.resources
+E:\2018工程综合训练\第三次作业\实验\jingziqi\井字棋c#\obj\Debug\井字棋.Properties.Resources.resources
+E:\2018工程综合训练\第三次作业\实验\jingziqi\井字棋c#\obj\Debug\井字棋.csproj.GenerateResource.Cache
