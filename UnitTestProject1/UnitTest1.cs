@@ -238,7 +238,7 @@ namespace UnitTestProject1
             Assert.AreEqual(1, myFrom.ButtonArray[0, 0]);
         }
         [TestMethod]
-        public void Rester1()
+        public void Restar1()
         {
             Form myFrom = new Form();
             myFrom.ButtonArray[0, 0] = 1;
@@ -263,7 +263,7 @@ namespace UnitTestProject1
 
         }
         [TestMethod]
-        public void Rester2()
+        public void Restar2()
         {
             Form myFrom = new Form();
             myFrom.ButtonArray[0, 0] = 0;
@@ -288,7 +288,7 @@ namespace UnitTestProject1
 
         }
         [TestMethod]
-        public void Rester3()
+        public void Restar3()
         {
             Form myFrom = new Form();
             myFrom.ButtonArray[0, 0] = 1;
@@ -313,7 +313,7 @@ namespace UnitTestProject1
 
         }
         [TestMethod]
-        public void Rester4()
+        public void Restar4()
         {
             Form myFrom = new Form();
             myFrom.ButtonArray[0, 0] = 1;
@@ -338,7 +338,7 @@ namespace UnitTestProject1
 
         }
         [TestMethod]
-        public void Rester5()
+        public void Restar5()
         {
             Form myFrom = new Form();
             myFrom.ButtonArray[0, 0] = 1;
@@ -427,7 +427,7 @@ namespace UnitTestProject1
 
         }
         [TestMethod]
-        public void Testtiankong1()
+        public void TFindBreach_Test1()
         {
 
             Form myForm = new Form();
@@ -438,7 +438,7 @@ namespace UnitTestProject1
             Assert.AreEqual(myForm.ButtonArray[0, 1], 0);
         }
         [TestMethod]
-        public void Testtiankong2()
+        public void TFindBreach_Test2()
         {
 
             Form myForm = new Form();
@@ -449,7 +449,7 @@ namespace UnitTestProject1
             Assert.AreEqual(myForm.ButtonArray[0, 1], 0);
         }
         [TestMethod]
-        public void Testtiankong3()
+        public void TFindBreach_Test3()
         {
 
             Form myForm = new Form();
@@ -463,7 +463,7 @@ namespace UnitTestProject1
             Assert.AreEqual(myForm.ButtonArray[1, 1], 0);
         }
         [TestMethod]
-        public void Testbulou1()
+        public void TFindBreach_Test4()
         {
 
             Form myForm = new Form();
@@ -474,7 +474,7 @@ namespace UnitTestProject1
             Assert.AreEqual(myForm.ButtonArray[0, 1], 2);
         }
         [TestMethod]
-        public void Testbulou2()
+        public void TFindBreach_Test5()
         {
 
             Form myForm = new Form();
@@ -488,7 +488,7 @@ namespace UnitTestProject1
             Assert.AreEqual(myForm.ButtonArray[1, 1], 0);
         }
         [TestMethod]
-        public void Testbulou3()
+        public void TFindBreach_Test6()
         {
 
             Form myForm = new Form();
@@ -502,7 +502,7 @@ namespace UnitTestProject1
             Assert.AreEqual(myForm.ButtonArray[0, 1], 2);
         }
         [TestMethod]
-        public void Testfindchance1()
+        public void FindBreach2_Test1()
         {
 
             Form myForm = new Form();
@@ -513,7 +513,7 @@ namespace UnitTestProject1
             Assert.AreEqual(myForm.ButtonArray[0, 2], 2);
         }
         [TestMethod]
-        public void Testfindchance2()
+        public void FindBreach2_Test2()
         {
 
             Form myForm = new Form();
@@ -530,7 +530,7 @@ namespace UnitTestProject1
             Assert.AreEqual(myForm.ButtonArray[2, 2], 2);
         }
         [TestMethod]
-        public void Testfindchance3()
+        public void FindBreach2_Test3()
         {
 
             Form myForm = new Form();
