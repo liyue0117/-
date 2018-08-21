@@ -541,6 +541,10 @@ namespace 井字棋
                 default:MessageBox.Show("Error!", "信息提示！", MessageBoxButtons.OK, MessageBoxIcon.Error);break;
             }
         }
+        /// <summary>
+        /// 保存游戏记录
+        /// </summary>
+        /// <param name="p">要保存的字符串</param>
         private void SaveResult(string p)
         {
             FileStream fs = new FileStream(@"C:\Users\lrk\Desktop\#\jingziqi\井字棋c#\结果.txt", FileMode.Append);
