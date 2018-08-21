@@ -166,7 +166,7 @@ namespace UnitTestProject1
             myFrom.ButtonArray[2, 1] = 0;
             myFrom.ButtonArray[2, 2] = 0;
             myFrom.ComputerTurn();
-            Assert.AreEqual(2, myFrom.ButtonArray[0, 0]);
+            Assert.AreEqual(2, myFrom.ButtonArray[2, 2]);
         }
         [TestMethod]
         public void Computer_turn4()
@@ -183,7 +183,7 @@ namespace UnitTestProject1
             myFrom.ButtonArray[2, 1] = 0;
             myFrom.ButtonArray[2, 2] = 2;
             myFrom.ComputerTurn();
-            Assert.AreEqual(0, myFrom.ButtonArray[0, 0]);
+            Assert.AreEqual(0, myFrom.ButtonArray[0, 1]);
         }
         [TestMethod]
         public void Computer_turn5()
@@ -221,7 +221,7 @@ namespace UnitTestProject1
         {
             Form myFrom = new Form();
             myFrom.Turn(1, 2, 2);
-            Assert.AreEqual(0, myFrom.ButtonArray[1, 2]);
+            Assert.AreEqual(1, myFrom.ButtonArray[2, 2]);
         }
         [TestMethod]
         public void Turn4()
@@ -425,6 +425,126 @@ namespace UnitTestProject1
             myFrom.电脑ToolStripMenuItem_Click(sender, e);
             Assert.AreEqual(4, myFrom.type);
 
+        }
+        [TestMethod]
+        public void Testtiankong1()
+        {
+
+            Form myForm = new Form();
+            myForm.ButtonArray[0, 0] = 2;
+            myForm.ButtonArray[0, 1] = 0;
+            myForm.ButtonArray[0, 2] = 2;
+            myForm.FindBreach(1);
+            Assert.AreEqual(myForm.ButtonArray[0, 1], 0);
+        }
+        [TestMethod]
+        public void Testtiankong2()
+        {
+
+            Form myForm = new Form();
+            myForm.ButtonArray[0, 0] = 2;
+            myForm.ButtonArray[1, 0] = 0;
+            myForm.ButtonArray[2, 0] = 2;
+            myForm.FindBreach(2);
+            Assert.AreEqual(myForm.ButtonArray[0, 1], 0);
+        }
+        [TestMethod]
+        public void Testtiankong3()
+        {
+
+            Form myForm = new Form();
+            myForm.ButtonArray[0, 0] = 1;
+            myForm.ButtonArray[0, 1] = 0;
+            myForm.ButtonArray[0, 2] = 1;
+            myForm.ButtonArray[1, 0] = 2;
+            myForm.ButtonArray[1, 1] = 0;
+            myForm.ButtonArray[1, 2] = 2;
+            myForm.FindBreach(1);
+            Assert.AreEqual(myForm.ButtonArray[1, 1], 0);
+        }
+        [TestMethod]
+        public void Testbulou1()
+        {
+
+            Form myForm = new Form();
+            myForm.ButtonArray[0, 0] = 1;
+            myForm.ButtonArray[0, 1] = 0;
+            myForm.ButtonArray[0, 2] = 1;
+            myForm.FindBreach(2);
+            Assert.AreEqual(myForm.ButtonArray[0, 1], 2);
+        }
+        [TestMethod]
+        public void Testbulou2()
+        {
+
+            Form myForm = new Form();
+            myForm.ButtonArray[0, 0] = 1;
+            myForm.ButtonArray[1, 1] = 0;
+            myForm.ButtonArray[2, 2] = 1;
+            myForm.ButtonArray[1, 0] = 2;
+            myForm.ButtonArray[1, 1] = 0;
+            myForm.ButtonArray[1, 2] = 2;
+            myForm.FindBreach(2);
+            Assert.AreEqual(myForm.ButtonArray[1, 1], 0);
+        }
+        [TestMethod]
+        public void Testbulou3()
+        {
+
+            Form myForm = new Form();
+            myForm.ButtonArray[0, 0] = 1;
+            myForm.ButtonArray[0, 1] = 0;
+            myForm.ButtonArray[0, 2] = 1;
+            myForm.ButtonArray[1, 0] = 2;
+            myForm.ButtonArray[1, 1] = 0;
+            myForm.ButtonArray[1, 2] = 2;
+            myForm.FindBreach(2);
+            Assert.AreEqual(myForm.ButtonArray[0, 1], 2);
+        }
+        [TestMethod]
+        public void Testfindchance1()
+        {
+
+            Form myForm = new Form();
+            myForm.ButtonArray[0, 0] = 2;
+            myForm.ButtonArray[1, 1] = 0;
+            myForm.ButtonArray[2, 2] = 0;
+            myForm.FindBreach2(1);
+            Assert.AreEqual(myForm.ButtonArray[0, 2], 2);
+        }
+        [TestMethod]
+        public void Testfindchance2()
+        {
+
+            Form myForm = new Form();
+            myForm.ButtonArray[0, 0] = 0;
+            myForm.ButtonArray[0, 1] = 1;
+            myForm.ButtonArray[0, 2] = 1;
+            myForm.ButtonArray[1, 0] = 0;
+            myForm.ButtonArray[1, 1] = 0;
+            myForm.ButtonArray[1, 2] = 0;
+            myForm.ButtonArray[2, 0] = 2;
+            myForm.ButtonArray[2, 1] = 0;
+            myForm.ButtonArray[2, 2] = 0;
+            myForm.FindBreach2(1);
+            Assert.AreEqual(myForm.ButtonArray[2, 2], 2);
+        }
+        [TestMethod]
+        public void Testfindchance3()
+        {
+
+            Form myForm = new Form();
+            myForm.ButtonArray[0, 0] = 0;
+            myForm.ButtonArray[0, 1] = 1;
+            myForm.ButtonArray[0, 2] = 1;
+            myForm.ButtonArray[1, 0] = 0;
+            myForm.ButtonArray[1, 1] = 2;
+            myForm.ButtonArray[1, 2] = 0;
+            myForm.ButtonArray[2, 0] = 2;
+            myForm.ButtonArray[2, 1] = 0;
+            myForm.ButtonArray[2, 2] = 0;
+            myForm.FindBreach2(1);
+            Assert.AreEqual(myForm.ButtonArray[2, 2], 2);
         }
     }
 }
