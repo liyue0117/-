@@ -11,7 +11,7 @@ namespace UnitTestProject1
         public void Man_vs_Comp_ManWin()
         {
             Form myFrom = new Form();
-            myFrom.type = 3;
+            myFrom.GameType = 3;
             myFrom.ButtonArray[0, 0] = 1;
             myFrom.ButtonArray[0, 1] = 1;
             myFrom.ButtonArray[0, 2] = 1;
@@ -22,7 +22,7 @@ namespace UnitTestProject1
         public void Man_vs_Comp_CompWin()
         {
             Form myFrom = new Form();
-            myFrom.type = 3;
+            myFrom.GameType = 3;
             myFrom.ButtonArray[0, 0] = 1;
             myFrom.ButtonArray[0, 1] = 1;
             myFrom.ButtonArray[0, 2] = 0;
@@ -388,7 +388,7 @@ namespace UnitTestProject1
             object sender = null; // TODO: 初始化为适当的值
             EventArgs e = null; // TODO: 初始化为适当的值
             myFrom.玩家1ToolStripMenuItem_Click(sender, e);
-            Assert.AreEqual(1, myFrom.type);
+            Assert.AreEqual(1, myFrom.GameType);
             Assert.AreEqual(true, myFrom.turn);
 
         }
@@ -400,7 +400,7 @@ namespace UnitTestProject1
             object sender = null; // TODO: 初始化为适当的值
             EventArgs e = null; // TODO: 初始化为适当的值
             myFrom.玩家2ToolStripMenuItem_Click(sender, e);
-            Assert.AreEqual(2, myFrom.type);
+            Assert.AreEqual(2, myFrom.GameType);
             Assert.AreEqual(false, myFrom.turn);
 
         }
@@ -412,7 +412,7 @@ namespace UnitTestProject1
             object sender = null; // TODO: 初始化为适当的值
             EventArgs e = null; // TODO: 初始化为适当的值
             myFrom.人ToolStripMenuItem_Click(sender, e);
-            Assert.AreEqual(3, myFrom.type);
+            Assert.AreEqual(3, myFrom.GameType);
 
         }
         [TestMethod]
@@ -423,7 +423,7 @@ namespace UnitTestProject1
             object sender = null; // TODO: 初始化为适当的值
             EventArgs e = null; // TODO: 初始化为适当的值
             myFrom.电脑ToolStripMenuItem_Click(sender, e);
-            Assert.AreEqual(4, myFrom.type);
+            Assert.AreEqual(4, myFrom.GameType);
 
         }
         [TestMethod]
