@@ -79,3 +79,4 @@ C:\Users\lrk\Desktop\#\jingziqi\井字棋程序c#最终版\井字棋c#\obj\Debug
 C:\Users\lrk\Desktop\#\jingziqi\井字棋程序c#最终版\井字棋c#\obj\Debug\井字棋.csproj.CoreCompileInputs.cache
 C:\Users\lrk\Desktop\#\jingziqi\井字棋程序c#最终版\井字棋c#\obj\Debug\井字棋.exe
 C:\Users\lrk\Desktop\#\jingziqi\井字棋程序c#最终版\井字棋c#\obj\Debug\井字棋.pdb
+C:\Users\lrk\Desktop\#\jingziqi\井字棋程序c#最终版\井字棋c#\bin\Debug\井字棋.xml
