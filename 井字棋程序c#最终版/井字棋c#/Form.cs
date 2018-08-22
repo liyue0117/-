@@ -127,7 +127,9 @@ namespace 井字棋
                 if (Player == 1 && (GameType == 3 || GameType == 4)) ComputerTurn();//人机模式自动让机器下棋
         }
 
-        //电脑下子
+        /// <summary>
+        /// 电脑下子
+        /// </summary>
         public void ComputerTurn()
         {
             #region 调用寻找缺口的函数
@@ -160,7 +162,7 @@ namespace 井字棋
         /// 寻找缺口，寻找是否有一条线上已经有两个同样的棋子，并补上第三个，用于防止对方连成一条线或者使自己连成一条线
         /// </summary>
         /// <param name="Player">玩家为1，电脑为2</param>
-        /// <returns></returns>
+        /// <returns>Result用于判断是否找到玩家缺口</returns>
         public int FindBreach(int Player)
         {
             int Result = 0, Opponent = 0;
@@ -267,7 +269,11 @@ namespace 井字棋
             return Result;
         }
 
-        //判断是否有 创造两个一排的良好机会
+        /// <summary>
+        /// 判断是否有 创造两个一排的良好机会
+        /// </summary>
+        /// <param name="Player">玩家为1，电脑为2</param>
+        /// <returns>Result用于判断是否找到玩家缺口</returns>
         public int FindBreach2(int Player)
         {
             int Result = 0, Opponent = 0;
@@ -332,7 +338,11 @@ namespace 井字棋
             return Result;
         }
 
-        //判断游戏是否已经分出胜负
+        /// <summary>
+        /// 判断游戏是否已经分出胜负
+        /// </summary>
+        /// <param name="Player">玩家或玩家1为1，电脑或玩家2为2</param>
+        /// <returns>结束函数，无意义</returns>
         public int JudgeWin(int Player)
         {
             int Result = 0;
@@ -407,7 +417,9 @@ namespace 井字棋
             return 0;
         }
 
-        //恢复初始情况
+        /// <summary>
+        /// 恢复初始情况
+        /// </summary>
         public void Restart()
         {
             #region 将按钮数组还原
