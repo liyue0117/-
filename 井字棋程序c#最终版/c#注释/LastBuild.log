@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder Utilities" version="1.9.3.0" projectFile="D:\jingziqi-master(1)\sdad.shfbproj" started="2018/8/22 11:47:19">
+<buildStep step="Initializing">
+</buildStep>
+<buildStep step="FindingTools">
+Finding tools...
+Found Sandcastle tools in &#39;D:\Sandcastle\&#39;
+Searching for HTML Help 1 compiler...
+Found HTML Help 1 compiler in &#39;C:\Program Files (x86)\HTML Help Workshop\&#39;
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: D:\jingziqi-master(1)\jingziqi-master\井字棋程序c#最终版\井字棋c#\bin\Debug\井字棋.dll
+    Found assembly &#39;D:\jingziqi-master(1)\jingziqi-master\井字棋程序c#最终版\井字棋c#\bin\Debug\井字棋.dll&#39;
+Source: D:\jingziqi-master(1)\jingziqi-master\井字棋程序c#最终版\井字棋c#\bin\Debug\井字棋.xml
+
+Copying XML comments files
+    D:\jingziqi-master(1)\jingziqi-master\井字棋程序c#最终版\井字棋c#\bin\Debug\井字棋.xml -&gt; D:\jingziqi-master(1)\Working\井字棋.xml
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (zh-CN, 中文(简体，中国))...
+SHFB: Warning BE0003: Sandcastle shared content for the &#39;zh-CN, 中文(简体，中国)&#39; language could not be found.  Using &#39;en-US, English (US)&#39; defaults.
+    Last step completed in 00:00:00.0778
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.0067
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  MrefBuilder (v2.6.10621.1)
+  Copyright ? Microsoft 2006
+  Info: Loaded 1 assemblies for reflection and 1 dependency assemblies.
+  Info: Wrote information on 1 namespaces, 1 types, and 16 members
+  XslTransform (v2.6.10621.1)
+  Copyright ? Microsoft 2005-2006
+  Info: Applying XSL transformation &#39;D:\Sandcastle\ProductionTransforms\MergeDuplicates.xsl&#39;.
+  reflection.all -&gt; reflection.org
+    Last step completed in 00:00:03.8527
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.0050
+</buildStep>
+<buildStep step="ApplyVisibilityProperties">
+Applying visibility properties to reflection information file
+    0 attribute nodes removed
+    0 explicit interface implementations removed
+    5 local and base class EII elements removed
+    506 inherited member elements removed
+    Last step completed in 00:00:00.0253
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  XslTransform (v2.6.10621.1)
+  Copyright ? Microsoft 2005-2006
+  Info: Applying XSL transformation &#39;D:\Sandcastle\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  reflection.org -&gt; C:\Users\yww\AppData\Local\Temp\tmp9609.tmp
+  Info: Applying XSL transformation &#39;D:\Sandcastle\ProductionTransforms\AddGuidFilenames.xsl&#39;.
+  C:\Users\yww\AppData\Local\Temp\tmp9609.tmp -&gt; reflection.xml
+  XslTransform (v2.6.10621.1)
+  Copyright ? Microsoft 2005-2006
+  Info: Applying XSL transformation &#39;D:\Sandcastle\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+  reflection.xml -&gt; manifest.xml
+    Last step completed in 00:00:03.3136
+</buildStep>
+<buildStep step="ModifyHelpTopicFilenames">
+Modifying help topic filenames in reflection information file
+    No changes required
+    Last step completed in 00:00:00.0248
+</buildStep>
+<buildStep step="CopyStandardContent">
+Copying standard help content...
+D:\Sandcastle\Presentation\vs2005\icons\adm.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\adm.gif
+D:\Sandcastle\Presentation\vs2005\icons\adm_arch.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\adm_arch.gif
+D:\Sandcastle\Presentation\vs2005\icons\adm_dev.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\adm_dev.gif
+D:\Sandcastle\Presentation\vs2005\icons\adm_dev_arch.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\adm_dev_arch.gif
+D:\Sandcastle\Presentation\vs2005\icons\alert_caution.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\alert_caution.gif
+D:\Sandcastle\Presentation\vs2005\icons\alert_note.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\alert_note.gif
+D:\Sandcastle\Presentation\vs2005\icons\alert_security.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\alert_security.gif
+D:\Sandcastle\Presentation\vs2005\icons\arch.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\arch.gif
+D:\Sandcastle\Presentation\vs2005\icons\big_adm.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\big_adm.gif
+D:\Sandcastle\Presentation\vs2005\icons\big_arch.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\big_arch.gif
+D:\Sandcastle\Presentation\vs2005\icons\big_dev.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\big_dev.gif
+D:\Sandcastle\Presentation\vs2005\icons\big_kw.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\big_kw.gif
+D:\Sandcastle\Presentation\vs2005\icons\box.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\box.gif
+D:\Sandcastle\Presentation\vs2005\icons\Caution.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\Caution.gif
+D:\Sandcastle\Presentation\vs2005\icons\CFW.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\CFW.gif
+D:\Sandcastle\Presentation\vs2005\icons\collall.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\collall.gif
+D:\Sandcastle\Presentation\vs2005\icons\collapse.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\collapse.gif
+D:\Sandcastle\Presentation\vs2005\icons\collapse_all.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\collapse_all.gif
+D:\Sandcastle\Presentation\vs2005\icons\copycode.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\copycode.gif
+D:\Sandcastle\Presentation\vs2005\icons\copycodeHighlight.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\copycodeHighlight.gif
+D:\Sandcastle\Presentation\vs2005\icons\dev.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\dev.gif
+D:\Sandcastle\Presentation\vs2005\icons\dev_arch.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\dev_arch.gif
+D:\Sandcastle\Presentation\vs2005\icons\dropdown.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\dropdown.gif
+D:\Sandcastle\Presentation\vs2005\icons\dropdownHover.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\dropdownHover.gif
+D:\Sandcastle\Presentation\vs2005\icons\drpdown.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\drpdown.gif
+D:\Sandcastle\Presentation\vs2005\icons\drpdown_orange.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\drpdown_orange.gif
+D:\Sandcastle\Presentation\vs2005\icons\drpdown_orange_up.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\drpdown_orange_up.gif
+D:\Sandcastle\Presentation\vs2005\icons\drpup.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\drpup.gif
+D:\Sandcastle\Presentation\vs2005\icons\exp.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\exp.gif
+D:\Sandcastle\Presentation\vs2005\icons\expall.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\expall.gif
+D:\Sandcastle\Presentation\vs2005\icons\expand_all.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\expand_all.gif
+D:\Sandcastle\Presentation\vs2005\icons\filter1a.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\filter1a.gif
+D:\Sandcastle\Presentation\vs2005\icons\filter1c.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\filter1c.gif
+D:\Sandcastle\Presentation\vs2005\icons\footer.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\footer.gif
+D:\Sandcastle\Presentation\vs2005\icons\gradient.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\gradient.gif
+D:\Sandcastle\Presentation\vs2005\icons\greencheck.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\greencheck.gif
+D:\Sandcastle\Presentation\vs2005\icons\greychck.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\greychck.gif
+D:\Sandcastle\Presentation\vs2005\icons\header_prev_next.jpg -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\header_prev_next.jpg
+D:\Sandcastle\Presentation\vs2005\icons\header_sql_tutorial_blank.jpg -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\header_sql_tutorial_blank.jpg
+D:\Sandcastle\Presentation\vs2005\icons\header_sql_tutorial_logo.GIF -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\header_sql_tutorial_logo.GIF
+D:\Sandcastle\Presentation\vs2005\icons\kw.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\kw.gif
+D:\Sandcastle\Presentation\vs2005\icons\kw_adm.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\kw_adm.gif
+D:\Sandcastle\Presentation\vs2005\icons\kw_adm_arch.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\kw_adm_arch.gif
+D:\Sandcastle\Presentation\vs2005\icons\kw_adm_dev.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\kw_adm_dev.gif
+D:\Sandcastle\Presentation\vs2005\icons\kw_adm_dev_arch.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\kw_adm_dev_arch.gif
+D:\Sandcastle\Presentation\vs2005\icons\kw_arch.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\kw_arch.gif
+D:\Sandcastle\Presentation\vs2005\icons\kw_dev.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\kw_dev.gif
+D:\Sandcastle\Presentation\vs2005\icons\kw_dev_arch.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\kw_dev_arch.gif
+D:\Sandcastle\Presentation\vs2005\icons\LastChild.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\LastChild.gif
+D:\Sandcastle\Presentation\vs2005\icons\load.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\load.gif
+D:\Sandcastle\Presentation\vs2005\icons\load_hover.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\load_hover.gif
+D:\Sandcastle\Presentation\vs2005\icons\note.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\note.gif
+D:\Sandcastle\Presentation\vs2005\icons\pencil.GIF -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\pencil.GIF
+D:\Sandcastle\Presentation\vs2005\icons\privclass.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\privclass.gif
+D:\Sandcastle\Presentation\vs2005\icons\privdelegate.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\privdelegate.gif
+D:\Sandcastle\Presentation\vs2005\icons\privenum.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\privenum.gif
+D:\Sandcastle\Presentation\vs2005\icons\privenumeration.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\privenumeration.gif
+D:\Sandcastle\Presentation\vs2005\icons\privevent.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\privevent.gif
+D:\Sandcastle\Presentation\vs2005\icons\privextension.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\privextension.gif
+D:\Sandcastle\Presentation\vs2005\icons\privfield.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\privfield.gif
+D:\Sandcastle\Presentation\vs2005\icons\privinterface.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\privinterface.gif
+D:\Sandcastle\Presentation\vs2005\icons\privmethod.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\privmethod.gif
+D:\Sandcastle\Presentation\vs2005\icons\privproperty.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\privproperty.gif
+D:\Sandcastle\Presentation\vs2005\icons\privstructure.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\privstructure.gif
+D:\Sandcastle\Presentation\vs2005\icons\protclass.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\protclass.gif
+D:\Sandcastle\Presentation\vs2005\icons\protdelegate.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\protdelegate.gif
+D:\Sandcastle\Presentation\vs2005\icons\protenum.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\protenum.gif
+D:\Sandcastle\Presentation\vs2005\icons\protenumeration.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\protenumeration.gif
+D:\Sandcastle\Presentation\vs2005\icons\protevent.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\protevent.gif
+D:\Sandcastle\Presentation\vs2005\icons\protextension.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\protextension.gif
+D:\Sandcastle\Presentation\vs2005\icons\protfield.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\protfield.gif
+D:\Sandcastle\Presentation\vs2005\icons\protinterface.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\protinterface.gif
+D:\Sandcastle\Presentation\vs2005\icons\protmethod.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\protmethod.gif
+D:\Sandcastle\Presentation\vs2005\icons\protoperator.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\protoperator.gif
+D:\Sandcastle\Presentation\vs2005\icons\protproperty.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\protproperty.gif
+D:\Sandcastle\Presentation\vs2005\icons\protstructure.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\protstructure.gif
+D:\Sandcastle\Presentation\vs2005\icons\pubclass.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\pubclass.gif
+D:\Sandcastle\Presentation\vs2005\icons\pubdelegate.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\pubdelegate.gif
+D:\Sandcastle\Presentation\vs2005\icons\pubenum.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\pubenum.gif
+D:\Sandcastle\Presentation\vs2005\icons\pubenumeration.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\pubenumeration.gif
+D:\Sandcastle\Presentation\vs2005\icons\pubevent.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\pubevent.gif
+D:\Sandcastle\Presentation\vs2005\icons\pubextension.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\pubextension.gif
+D:\Sandcastle\Presentation\vs2005\icons\pubfield.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\pubfield.gif
+D:\Sandcastle\Presentation\vs2005\icons\pubinterface.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\pubinterface.gif
+D:\Sandcastle\Presentation\vs2005\icons\pubmethod.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\pubmethod.gif
+D:\Sandcastle\Presentation\vs2005\icons\puboperator.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\puboperator.gif
+D:\Sandcastle\Presentation\vs2005\icons\pubproperty.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\pubproperty.gif
+D:\Sandcastle\Presentation\vs2005\icons\pubstructure.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\pubstructure.gif
+D:\Sandcastle\Presentation\vs2005\icons\requirements1a.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\requirements1a.gif
+D:\Sandcastle\Presentation\vs2005\icons\requirements1c.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\requirements1c.gif
+D:\Sandcastle\Presentation\vs2005\icons\save.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\save.gif
+D:\Sandcastle\Presentation\vs2005\icons\save_hover.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\save_hover.gif
+D:\Sandcastle\Presentation\vs2005\icons\security.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\security.gif
+D:\Sandcastle\Presentation\vs2005\icons\seealso1a.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\seealso1a.gif
+D:\Sandcastle\Presentation\vs2005\icons\seealso1c.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\seealso1c.gif
+D:\Sandcastle\Presentation\vs2005\icons\slMobile.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\slMobile.gif
+D:\Sandcastle\Presentation\vs2005\icons\static.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\static.gif
+D:\Sandcastle\Presentation\vs2005\icons\xna.gif -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\icons\xna.gif
+D:\Sandcastle\Presentation\vs2005\scripts\CheckboxMenu.js -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\scripts\CheckboxMenu.js
+D:\Sandcastle\Presentation\vs2005\scripts\CommonUtilities.js -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\scripts\CommonUtilities.js
+D:\Sandcastle\Presentation\vs2005\scripts\Dropdown.js -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\scripts\Dropdown.js
+D:\Sandcastle\Presentation\vs2005\scripts\EventUtilities.js -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\scripts\EventUtilities.js
+D:\Sandcastle\Presentation\vs2005\scripts\script_feedBack.js -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\scripts\script_feedBack.js
+D:\Sandcastle\Presentation\vs2005\scripts\script_manifold.js -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\scripts\script_manifold.js
+D:\Sandcastle\Presentation\vs2005\scripts\SplitScreen.js -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\scripts\SplitScreen.js
+D:\Sandcastle\Presentation\vs2005\styles\Presentation.css -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\styles\Presentation.css
+D:\Sandcastle\Presentation\vs2005\styles\Whidbey\presentation.css -&gt; D:\jingziqi-master(1)\Working\Output\HtmlHelp1\styles\Whidbey\presentation.css
+    Last step completed in 00:00:00.6730
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+No additional content to copy
+    Last step completed in 00:00:00.0099
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00.0049
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  XslTransform (v2.6.10621.1)
+  Copyright ? Microsoft 2005-2006
+  Info: Applying XSL transformation &#39;D:\Sandcastle\ProductionTransforms\CreateVSToc.xsl&#39;.
+  reflection.xml -&gt; toc.xml
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:01.8675
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00.0577
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+D:\jingziqi-master(1)\Working\sandcastle.config
+    Last step completed in 00:00:00.0365
+</buildStep>
+<buildStep step="BuildReferenceTopics">
+Building reference help topics...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  BuildAssembler (v2.6.10621.1)
+  Copyright ? Microsoft 2006
+  Info: CopyFromFileComponent: Instantiating component.
+  Info: CopyFromFileComponent: Loading data file &#39;D:\Sandcastle\Presentation\vs2005\Transforms\skeleton.xml&#39;.
+  Info: CopyFromIndexComponent: Instantiating component.
+  Info: CopyFromIndexComponent: Searching for files that match &#39;*.xml&#39;.
+  Info: CopyFromIndexComponent: Searching for files that match &#39;reflection.xml&#39;.
+  Info: CopyFromIndexComponent: Indexed 202765 elements in 409 files.
+  Info: CopyFromIndexComponent: Loaded 0 copy components.
+  Info: CopyFromIndexComponent: Instantiating component.
+  Info: CopyFromIndexComponent: Loaded 0 copy components.
+  Info: ForEachComponent: Instantiating component.
+  Info: ForEachComponent: Loading subcomponents.
+  Info: CopyFromIndexComponent: Instantiating component.
+  Info: CopyFromIndexComponent: Loaded 0 copy components.
+  Info: ForEachComponent: Loaded 1 subcomponents.
+  Info: ForEachComponent: Instantiating component.
+  Info: ForEachComponent: Loading subcomponents.
+  Info: CopyFromIndexComponent: Instantiating component.
+  Info: CopyFromIndexComponent: Loaded 0 copy components.
+  Info: ForEachComponent: Loaded 1 subcomponents.
+  Info: ForEachComponent: Instantiating component.
+  Info: ForEachComponent: Loading subcomponents.
+  Info: CopyFromIndexComponent: Instantiating component.
+  Info: CopyFromIndexComponent: Loaded 0 copy components.
+  Info: ForEachComponent: Loaded 1 subcomponents.
+  Info: ForEachComponent: Instantiating component.
+  Info: ForEachComponent: Loading subcomponents.
+  Info: CopyFromIndexComponent: Instantiating component.
+  Info: CopyFromIndexComponent: Loaded 0 copy components.
+  Info: ForEachComponent: Loaded 1 subcomponents.
+  Info: ForEachComponent: Instantiating component.
+  Info: ForEachComponent: Loading subcomponents.
+  Info: CopyFromIndexComponent: Instantiating component.
+  Info: CopyFromIndexComponent: Loaded 0 copy components.
+  Info: ForEachComponent: Loaded 1 subcomponents.
+  Info: ForEachComponent: Instantiating component.
+  Info: ForEachComponent: Loading subcomponents.
+  Info: CopyFromIndexComponent: Instantiating component.
+  Info: CopyFromIndexComponent: Loaded 0 copy components.
+  Info: ForEachComponent: Loaded 1 subcomponents.
+  Info: ForEachComponent: Instantiating component.
+  Info: ForEachComponent: Loading subcomponents.
+  Info: CopyFromIndexComponent: Instantiating component.
+  Info: CopyFromIndexComponent: Loaded 0 copy components.
+  Info: ForEachComponent: Loaded 1 subcomponents.
+  Info: IfThenComponent: Instantiating component.
+  Info: SyntaxComponent: Instantiating component.
+  Info: SyntaxComponent: Loaded 3 syntax generators.
+  Info: CopyFromIndexComponent: Instantiating component.
+  Info: CopyFromIndexComponent: Searching for files that match &#39;*.xml&#39;.
+  Info: CopyFromIndexComponent: Searching for files that match &#39;D:\jingziqi-master(1)\Working\井字棋.xml&#39;.
+  Info: CopyFromIndexComponent: Indexed 15 elements in 1 files.
+  Info: CopyFromIndexComponent: Loaded 0 copy components.
+  Info: ForEachComponent: Instantiating component.
+  Info: ForEachComponent: Loading subcomponents.
+  Info: IfThenComponent: Instantiating component.
+  Info: CopyFromIndexComponent: Instantiating component.
+  Info: CopyFromIndexComponent: Loaded 0 copy components.
+  Info: CopyFromIndexComponent: Instantiating component.
+  Info: CopyFromIndexComponent: Loaded 0 copy components.
+  Info: ForEachComponent: Loaded 2 subcomponents.
+  Info: CopyFromIndexComponent: Instantiating component.
+  Info: CopyFromIndexComponent: Loaded 0 copy components.
+  Info: ShowMissingComponent: Instantiating component.
+  Info: ShowMissingComponent: 
+      [Sandcastle Help File Builder BuildAssembler Components, version 1.9.3.0]
+      Show Missing Documentation Component. Copyright ? 2006-2011, Eric Woodruff, All Rights Reserved
+      http://SHFB.CodePlex.com
+  Info: VersionInfoComponent: Instantiating component.
+  Info: VersionInfoComponent: 
+      [Sandcastle Help File Builder BuildAssembler Components, version 1.9.3.0]
+      Version Information Component. Copyright ? 2006-2011, Eric Woodruff, All Rights Reserved
+      http://SHFB.CodePlex.com
+  Info: CodeBlockComponent: Instantiating component.
+  Info: CodeBlockComponent: 
+      [Sandcastle Help File Builder BuildAssembler Components, version 1.9.3.0]
+      Code Block Component. Copyright ? 2006-2011, Eric Woodruff, All Rights Reserved.
+      Portions copyright (c) 2003, Jonathan de Halleux, All rights reserved.
+      http://SHFB.CodePlex.com
+  Info: TransformComponent: Instantiating component.
+  Info: PostTransformComponent: Instantiating component.
+  Info: PostTransformComponent: 
+      [Sandcastle Help File Builder BuildAssembler Components, version 1.9.3.0]
+      Post-Transform Component. Copyright ? 2006-2011, Eric Woodruff, All Rights Reserved
+      http://SHFB.CodePlex.com
+  Info: MultiFormatOutputComponent: Instantiating component.
+  Info: MultiFormatOutputComponent: 
+      [Sandcastle Help File Builder BuildAssembler Components, version 1.9.3.0]
+      Multi-Format Output Component. Copyright ? 2006-2011, Eric Woodruff, All Rights Reserved
+      http://SHFB.CodePlex.com
+  Info: MultiFormatOutputComponent: Loading components for HtmlHelp1 format
+  Info: SharedContentComponent: Instantiating component.
+  Info: SharedContentComponent: Searching for files that match &#39;D:\Sandcastle\Presentation\vs2005\content\shared_content.xml&#39;.
+  Info: SharedContentComponent: Loading shared content file &#39;D:\Sandcastle\Presentation\vs2005\content\shared_content.xml&#39;.
+  Info: SharedContentComponent: Found 1 files in D:\Sandcastle\Presentation\vs2005\content\shared_content.xml.
+  Info: SharedContentComponent: Searching for files that match &#39;D:\Sandcastle\Presentation\vs2005\content\reference_content.xml&#39;.
+  Info: SharedContentComponent: Loading shared content file &#39;D:\Sandcastle\Presentation\vs2005\content\reference_content.xml&#39;.
+  Info: SharedContentComponent: Found 1 files in D:\Sandcastle\Presentation\vs2005\content\reference_content.xml.
+  Info: SharedContentComponent: Searching for files that match &#39;D:\Sandcastle\Presentation\shared\content\syntax_content.xml&#39;.
+  Info: SharedContentComponent: Loading shared content file &#39;D:\Sandcastle\Presentation\shared\content\syntax_content.xml&#39;.
+  Info: SharedContentComponent: Found 1 files in D:\Sandcastle\Presentation\shared\content\syntax_content.xml.
+  Info: SharedContentComponent: Searching for files that match &#39;D:\Sandcastle\Presentation\vs2005\content\feedback_content.xml&#39;.
+  Info: SharedContentComponent: Loading shared content file &#39;D:\Sandcastle\Presentation\vs2005\content\feedBack_content.xml&#39;.
+  Info: SharedContentComponent: Found 1 files in D:\Sandcastle\Presentation\vs2005\content\feedback_content.xml.
+  Info: SharedContentComponent: Searching for files that match &#39;SharedBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Loading shared content file &#39;D:\jingziqi-master(1)\Working\SharedBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;roottopictitle&#39; with value in file &#39;D:\jingziqi-master(1)\Working\SharedBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;rootlink&#39; with value in file &#39;D:\jingziqi-master(1)\Working\SharedBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;runningheadertext&#39; with value in file &#39;D:\jingziqi-master(1)\Working\SharedBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;locationinformation&#39; with value in file &#39;D:\jingziqi-master(1)\Working\SharedBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;assemblynameandmodule&#39; with value in file &#39;D:\jingziqi-master(1)\Working\SharedBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;copycode&#39; with value in file &#39;D:\jingziqi-master(1)\Working\SharedBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;locale&#39; with value in file &#39;D:\jingziqi-master(1)\Working\SharedBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Found 1 files in SharedBuilderContent.xml.
+  Info: SharedContentComponent: Searching for files that match &#39;PresentationStyleBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Loading shared content file &#39;D:\jingziqi-master(1)\Working\PresentationStyleBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;header&#39; with value in file &#39;D:\jingziqi-master(1)\Working\PresentationStyleBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;footer&#39; with value in file &#39;D:\jingziqi-master(1)\Working\PresentationStyleBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;fb_alias&#39; with value in file &#39;D:\jingziqi-master(1)\Working\PresentationStyleBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;fb_product&#39; with value in file &#39;D:\jingziqi-master(1)\Working\PresentationStyleBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;fb_body&#39; with value in file &#39;D:\jingziqi-master(1)\Working\PresentationStyleBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;fb_send&#39; with value in file &#39;D:\jingziqi-master(1)\Working\PresentationStyleBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;fb_headerfeedback&#39; with value in file &#39;D:\jingziqi-master(1)\Working\PresentationStyleBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;feedback_alias&#39; with value in file &#39;D:\jingziqi-master(1)\Working\PresentationStyleBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;feedback_product&#39; with value in file &#39;D:\jingziqi-master(1)\Working\PresentationStyleBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Overriding shared content item &#39;feedback_body&#39; with value in file &#39;D:\jingziqi-master(1)\Working\PresentationStyleBuilderContent.xml&#39;.
+  Info: SharedContentComponent: Found 1 files in PresentationStyleBuilderContent.xml.
+  Info: SharedContentComponent: Loaded 631 shared content items.
+  Info: ResolveReferenceLinksComponent2: Instantiating component.
+  Info: ResolveReferenceLinksComponent2: Creating MSDN URL resolver.
+  Info: ResolveReferenceLinksComponent2: Searching directory &#39;D:\Sandcastle\Data\Reflection&#39; for targets files of the form &#39;*.xml&#39;.
+  Info: ResolveReferenceLinksComponent2: Searching directory &#39;D:\jingziqi-master(1)\Working&#39; for targets files of the form &#39;reflection.xml&#39;.
+  Info: ResolveReferenceLinksComponent2: Loaded 202765 reference targets.
+  Info: SaveComponent: Instantiating component.
+  Info: BuildAssembler: Building topic N:井字棋
+  Warn: ShowMissingComponent: Missing &lt;summary&gt; documentation for N:井字棋
+  Info: BuildAssembler: Building topic T:井字棋.Form
+  Warn: ShowMissingComponent: Missing &lt;summary&gt; documentation for T:井字棋.Form
+  Info: BuildAssembler: Building topic AllMembers.T:井字棋.Form
+  Info: ShowMissingComponent: Auto-documenting constructor M:井字棋.Form.#ctor
+  Info: BuildAssembler: Building topic Methods.T:井字棋.Form
+  Info: BuildAssembler: Building topic Fields.T:井字棋.Form
+  Info: BuildAssembler: Building topic M:井字棋.Form.#ctor
+  Info: ShowMissingComponent: Auto-documenting constructor M:井字棋.Form.#ctor
+  Info: BuildAssembler: Building topic F:井字棋.Form.ButtonArray
+  Warn: ShowMissingComponent: Missing &lt;summary&gt; documentation for F:井字棋.Form.ButtonArray
+  Info: BuildAssembler: Building topic M:井字棋.Form.ComputerTurn
+  Info: BuildAssembler: Building topic M:井字棋.Form.Dispose(System.Boolean)
+  Info: BuildAssembler: Building topic M:井字棋.Form.FindBreach(System.Int32)
+  Info: BuildAssembler: Building topic M:井字棋.Form.FindBreach2(System.Int32)
+  Info: BuildAssembler: Building topic F:井字棋.Form.GameType
+  Warn: ShowMissingComponent: Missing &lt;summary&gt; documentation for F:井字棋.Form.GameType
+  Info: BuildAssembler: Building topic M:井字棋.Form.JudgeWin(System.Int32)
+  Info: BuildAssembler: Building topic M:井字棋.Form.Restart
+  Info: BuildAssembler: Building topic M:井字棋.Form.ToolStripMenuItem_Restart_Click(System.Object,System.EventArgs)
+  Warn: ShowMissingComponent: Missing &lt;summary&gt; documentation for M:井字棋.Form.ToolStripMenuItem_Restart_Click(System.Object,System.EventArgs)
+  Warn: ShowMissingComponent: Missing &lt;param name=&quot;sender&quot;/&gt; documentation for M:井字棋.Form.ToolStripMenuItem_Restart_Click(System.Object,System.EventArgs)
+  Warn: ShowMissingComponent: Missing &lt;param name=&quot;e&quot;/&gt; documentation for M:井字棋.Form.ToolStripMenuItem_Restart_Click(System.Object,System.EventArgs)
+  Info: BuildAssembler: Building topic F:井字棋.Form.turn
+  Warn: ShowMissingComponent: Missing &lt;summary&gt; documentation for F:井字棋.Form.turn
+  Info: BuildAssembler: Building topic M:井字棋.Form.Turn(System.Int32,System.Int32,System.Int32)
+  Info: BuildAssembler: Building topic M:井字棋.Form.电脑ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Warn: ShowMissingComponent: Missing &lt;summary&gt; documentation for M:井字棋.Form.电脑ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Warn: ShowMissingComponent: Missing &lt;param name=&quot;sender&quot;/&gt; documentation for M:井字棋.Form.电脑ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Warn: ShowMissingComponent: Missing &lt;param name=&quot;e&quot;/&gt; documentation for M:井字棋.Form.电脑ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Info: BuildAssembler: Building topic M:井字棋.Form.人ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Warn: ShowMissingComponent: Missing &lt;summary&gt; documentation for M:井字棋.Form.人ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Warn: ShowMissingComponent: Missing &lt;param name=&quot;sender&quot;/&gt; documentation for M:井字棋.Form.人ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Warn: ShowMissingComponent: Missing &lt;param name=&quot;e&quot;/&gt; documentation for M:井字棋.Form.人ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Info: BuildAssembler: Building topic M:井字棋.Form.玩家1ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Warn: ShowMissingComponent: Missing &lt;summary&gt; documentation for M:井字棋.Form.玩家1ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Warn: ShowMissingComponent: Missing &lt;param name=&quot;sender&quot;/&gt; documentation for M:井字棋.Form.玩家1ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Warn: ShowMissingComponent: Missing &lt;param name=&quot;e&quot;/&gt; documentation for M:井字棋.Form.玩家1ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Info: BuildAssembler: Building topic M:井字棋.Form.玩家2ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Warn: ShowMissingComponent: Missing &lt;summary&gt; documentation for M:井字棋.Form.玩家2ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Warn: ShowMissingComponent: Missing &lt;param name=&quot;sender&quot;/&gt; documentation for M:井字棋.Form.玩家2ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Warn: ShowMissingComponent: Missing &lt;param name=&quot;e&quot;/&gt; documentation for M:井字棋.Form.玩家2ToolStripMenuItem_Click(System.Object,System.EventArgs)
+  Info: Processed 21 topics
+    Last step completed in 00:00:29.7087
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+    Last step completed in 00:00:00.0045
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+Sandcastle Help File Builder HTML Extract, version 1.9.3.0
+Copyright ? 2006-2011, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;2052&#39;, code page &#39;936&#39;, encoding charset &#39;gb2312&#39;.
+
+Processing Help 1 files in D:\jingziqi-master(1)\Working\Output\HtmlHelp1
+Processed 21 HTML files
+Sorting keywords and generating See Also indices
+Saving HTML Help 1 keyword index to D:\jingziqi-master(1)\Working\Documentation.hhk
+Saving HTML Help 1 table of contents to D:\jingziqi-master(1)\Working\Documentation.hhc
+    Last step completed in 00:00:00.8831
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating HTML Help 1 table of contents file...
+    Last step completed in 00:00:00.0017
+</buildStep>
+<buildStep step="GenerateHelpFileIndex">
+Generating HTML Help 1 index file...
+    Last step completed in 00:00:00.0029
+</buildStep>
+<buildStep step="GenerateHelpProject">
+Generating HTML Help 1 project file...
+    Last step completed in 00:00:00.0232
+</buildStep>
+<buildStep step="CompilingHelpFile">
+Compiling HTML Help 1 file...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  Microsoft HTML Help Compiler 4.74.8702
+  
+  
+  
+  Compiling d:\jingziqi-master(1)\Working\Output\HtmlHelp1\Documentation.chm
+  
+  
+  
+  
+  
+  Compile time: 0 minutes, 0 seconds
+  
+  23	Topics
+  
+  238	Local links
+  
+  98	Internet links
+  
+  0	Graphics
+  
+  
+  
+  
+  
+  Created d:\jingziqi-master(1)\Working\Output\HtmlHelp1\Documentation.chm, 110,879 bytes
+  
+  Compression decreased file by 331,964 bytes.
+  
+    Last step completed in 00:00:02.2908
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:00.0472
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 08/22/2018 11:48 上午.  Total time: 00:00:43.1841
+
+</buildStep>
+</shfbBuild>
